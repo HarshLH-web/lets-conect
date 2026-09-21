@@ -37,7 +37,8 @@ img{
 
 
 #wwa{
-  background-image: url(/what-we.png);
+  /* background-image: url(/what-we.png); */
+  background-color: #010D08;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

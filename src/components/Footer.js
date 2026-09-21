@@ -39,9 +39,7 @@ function Footer() {
             </p>
             <div className="w-16 h-0.5 bg-white mx-auto mb-4"></div>
 
-            <a
-              href="https://api.whatsapp.com/send/?phone=9650889239&text&type=phone_number&app_absent=0"
-              aria-label="Call us at +91 9650889239"
+            <p
               className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity border-2 border-white rounded-full py-2 px-4 w-fit mx-auto"
             >
               <span className="px-1 rounded-full">
@@ -54,9 +52,9 @@ function Footer() {
                 />
               </span>
               <span className="text-white text-lg font-semibold">
-                +91 9650889239
+                +971 56 880 3758
               </span>
-            </a>
+            </p>
 
             <a
               href="mailto:support@lhtalentagency.com"

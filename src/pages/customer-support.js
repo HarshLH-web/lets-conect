@@ -361,12 +361,11 @@ function Support() {
           10AM - 6PM IST
         </h3>
 
-        <a
-          href="https://api.whatsapp.com/send/?phone=9650889239&text&type=phone_number&app_absent=0"
+        <p
           className="text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6"
         >
-          <span className="font-bold">WhatsApp:</span> +919650889239
-        </a>
+          <span className="font-bold">Contact Number:</span> +971 56 880 3758
+        </p>
 
         <a
           href="mailto:support@lhtalentagency.com"
