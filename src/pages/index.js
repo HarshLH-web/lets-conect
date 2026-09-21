@@ -21,7 +21,7 @@ const HomeSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Let&apos;s Conect",
-  alternateName: "LH Talent Management Agency",
+  alternateName: "Let&apos;s Conect",
   url: "https://www.letsconect.com",
   description:
     "Let&apos;s Conect's blog page provides you with all the needed information with updated details, insights, and tips about the live streaming industry. Explore Now!",
@@ -31,11 +31,7 @@ const HomeSchema = {
     logo: "https://www.letsconect.com/logo.png",
     url: "https://www.letsconect.com",
   },
-  sameAs: [
-    "https://www.instagram.com/lhtalentagency/",
-    "https://www.facebook.com/profile.php?id=61557976949556",
-    "https://www.linkedin.com/company/live-hosting-agency",
-  ],
+
   potentialAction: {
     "@type": "SearchAction",
     target: "https://www.letsconect.com/blogs?tag={search_term_string}",
@@ -47,15 +43,9 @@ const OrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Corporation",
   name: "Let&apos;s Conect",
-  alternateName: "LH Talent Management Agency",
+  alternateName: "Let&apos;s Conect",
   url: "https://www.letsconect.com/",
   logo: "https://www.letsconect.com/logo.png",
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=61557976949556",
-    "https://www.instagram.com/lhtalentagency/",
-    "https://www.linkedin.com/company/live-hosting-agency",
-    "https://www.youtube.com/@LHTalentAgency",
-  ],
 };
 
 export default function Home() {
@@ -174,7 +164,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Link
+            {/* <Link
               href="/apply-now"
               className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold  group transition duration-300 mx-auto mt-2 lg:m-0 flex items-center gap-1 w-fit relative overflow-hidden py-3 px-6"
               aria-label="Discover Now"
@@ -196,7 +186,7 @@ export default function Home() {
                   />
                 </svg>
               </span>
-            </Link>
+            </Link> */}
           </div>
           {/* Banner Image */}
           <div className="w-full lg:w-2/5 flex items-end">
@@ -212,12 +202,12 @@ export default function Home() {
         </div>
       </main>
       {/* CHANGE 1: Added Top Disclaimer Banner for Compliance */}
-      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base">
+      {/* <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base">
         <p>
           DISCLAIMER: This is an independent talent agency website and is NOT
           the official Bolo Up application or platform.
         </p>
-      </div>
+      </div> */}
 
       {/* Section 2 */}
       <section>
@@ -407,7 +397,7 @@ export default function Home() {
               where talent meets opportunity. Your success story begins here-
               let&apos;s create something big together.
             </p>
-            <Link
+            {/* <Link
               href="/apply-now"
               className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 font-semibold group transition duration-300 mx-auto mt-4 lg:m-0 py-3 px-6 rounded-full lg:mt-0 flex items-center gap-1 w-fit relative overflow-hidden"
               aria-label="View All"
@@ -429,7 +419,7 @@ export default function Home() {
                   />
                 </svg>
               </span>
-            </Link>
+            </Link> */}
           </div>
           {/* app container */}
           <div>
@@ -463,7 +453,7 @@ export default function Home() {
           </p>
 
           <Link
-            href="mailto:support@lhtalentagency.com"
+            href="mailto:letsconecttech@gmail.com"
             className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto py-3 px-6 lg:mt-0"
             aria-label="Get in Touch"
           >

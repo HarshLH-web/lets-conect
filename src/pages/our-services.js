@@ -389,12 +389,12 @@ function Services() {
             text="Explore exciting opportunities in the live-streaming world! We provide personal support and guidance to help you succeed. Join us and let's make your dreams a reality!"
           />
         </div>
-        <Link
+        {/* <Link
           href="/apply-now"
           className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-8 hover:bg-transparent hover:text-[#DE0402]"
         >
           Apply Now
-        </Link>
+        </Link> */}
       </div>
 
       {/* Section 5 */}

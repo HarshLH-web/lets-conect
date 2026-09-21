@@ -11,24 +11,24 @@ const OurTeam = [
       "Brings 8 years of experience in the live streaming industry and leads the company with a strategic vision. With an MBA in Human Resources and expertise in digital marketing, he drives innovation and growth.",
     designation: "Founder & Director",
   },
+  // {
+  //   name: "Mr. Apoorv Verma",
+  //   description:
+  //     "He drives the company's strategy and leads marketing initiatives with a strong focus on digital growth. Backed by 6 years of affiliate marketing experience, he brings valuable expertise to the digital landscape.",
+  //   designation: "CEO & CMO",
+  // },
   {
-    name: "Mr. Apoorv Verma",
+    name: "Mr. Jagrit Sharma",
     description:
-      "He drives the company's strategy and leads marketing initiatives with a strong focus on digital growth. Backed by 6 years of affiliate marketing experience, he brings valuable expertise to the digital landscape.",
-    designation: "CEO & CMO",
-  },
-  {
-    name: "Mr. Abhijit Gadhavi",
-    description:
-      "With 10 years of expertise in hospitality and customer support, Abhijit manages international customer relations. He is dedicated to delivering exceptional service and maintaining high customer satisfaction globally.",
+      "With 10 years of expertise in hospitality and customer support, Jagrit manages international customer relations. He is dedicated to delivering exceptional service and maintaining high customer satisfaction globally.",
     designation: "CRM - INT.",
   },
-  {
-    name: "Mr. Rohit Kundara",
-    description:
-      "Rohit oversees customer support in India and Pakistan, bringing 5 years of experience in customer service and sales. His leadership ensures exceptional client satisfaction and smooth operations in these regions.",
-    designation: "CRM - IND & PAK",
-  },
+  // {
+  //   name: "Mr. Rohit Kundara",
+  //   description:
+  //     "Rohit oversees customer support in India and Pakistan, bringing 5 years of experience in customer service and sales. His leadership ensures exceptional client satisfaction and smooth operations in these regions.",
+  //   designation: "CRM - IND & PAK",
+  // },
 ];
 
 function About() {
@@ -174,7 +174,7 @@ function About() {
           <div className="w-[90%] flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-4 mt-4 lg:mt-8 max-w-[985px] xl:max-w-[1170px] 2xl:max-w-[1500px] mx-auto">
             {OurTeam.map((item, index) => (
               <div
-                className="flex-1 text-center border-[1px] border-[#F6B6B6] rounded-2xl overflow-hidden"
+                className="flex-1 text-center border-[1px] border-[#F6B6B6] rounded-2xl overflow-hidden max-w-[380px]"
                 key={index}
               >
                 <p className="text-base text-[#878787] p-4 bg-[#F4F4F4]">

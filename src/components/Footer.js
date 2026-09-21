@@ -21,10 +21,10 @@ function Footer() {
       <div className="w-full lg:w-[100%] max-w-[90rem] mx-auto flex flex-col lg:flex-row lg:justify-center gap-8 px-6 lg:px-0 xl:px-6">
         {/* Contact Section - First on mobile */}
         <div className="order-1 lg:order-3 text-center relative lg:w-[30%]">
-          <div className="bg-[#DE0402] lg:p-9 xl:p-12 rounded-3xl lg:rounded-b-none lg:rounded-t-[2.5rem] -mt-24 md:-mt-20 pt-20 lg:absolute bottom-[-61px] h-[27rem] lg:right-0">
+          <div className="bg-[#DE0402] lg:p-9 xl:p-12 rounded-3xl lg:rounded-b-none lg:rounded-t-[2.5rem] -mt-24 md:-mt-20 pt-20 lg:absolute bottom-[-61px] h-[22.5rem] lg:right-0">
             <Link
               href="/"
-              className="h-40 w-40 absolute left-1/2 -translate-x-1/2 -top-44 lg:-top-20 bg-white rounded-full p-2"
+              className="h-32 w-32 absolute left-1/2 -translate-x-1/2 -top-44 lg:-top-16 bg-white rounded-full p-2"
             >
               <Image
                 src="/logo.png"
@@ -50,13 +50,13 @@ function Footer() {
                 />
               </span> */}
               <span className="text-white text-lg font-semibold">
-                +971 56 880 3758
+                +971568803758
               </span>
             </p>
 
             <a
-              href="mailto:support@lhtalentagency.com"
-              aria-label="Email us at support@lhtalentagency.com"
+              href="mailto:letsconecttech@gmail.com"
+              aria-label="Email us at letsconecttech@gmail.com"
               className="flex items-center justify-center mb-2 hover:opacity-90 transition-opacity py-2 w-fit mx-auto space-x-1"
             >
               <span className="rounded-full min-w-8">
@@ -69,7 +69,7 @@ function Footer() {
                 />
               </span>
               <span className="text-white font-semibold text-base">
-                support@lhtalentagency.com
+                letsconecttech@gmail.com
               </span>
             </a>
             <p className="text-white px-4 lg:px-2 2xl:px-0 font-semibold">
@@ -98,7 +98,7 @@ function Footer() {
 
           </div> */}
 
-            <div className="w-full text-center absolute bottom-1 left-0 py-4 lg:bg-[#AD0303]">
+            {/* <div className="w-full text-center absolute bottom-1 left-0 py-4 lg:bg-[#AD0303]">
               <div className="flex justify-center space-x-4">
                 {[
                   {
@@ -139,7 +139,7 @@ function Footer() {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -205,6 +205,20 @@ function Footer() {
                 className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline"
               >
                 Support
+              </Link>
+              <div className="h-px bg-[#242424]"></div>
+              <Link
+                href="/privacy-policy"
+                className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline"
+              >
+                Privacy Policy
+              </Link>
+              <div className="h-px bg-[#242424]"></div>
+              <Link
+                href="/terms-and-conditions"
+                className="text-gray-400 transform hover:translate-x-2 hover:text-[#ff2e2b] transition duration-300 block md:inline"
+              >
+                Terms and Conditions
               </Link>
             </div>
           </div>

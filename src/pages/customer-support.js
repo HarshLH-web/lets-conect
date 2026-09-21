@@ -110,7 +110,7 @@ function Support() {
         />
         <meta
           name="keywords"
-          content="LH Talent - Customer Support, Let's Conect - Contact Number"
+          content="Let's Conect - Customer Support, Let's Conect - Contact Number"
         />
         {/* <!-- Facebook Meta Tags --> */}
         <meta
@@ -362,14 +362,14 @@ function Support() {
         </h3>
 
         <p className="text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center mt-6">
-          <span className="font-bold">Contact Number:</span> +971 56 880 3758
+          <span className="font-bold">Contact Number:</span> +971568803758
         </p>
 
         <a
-          href="mailto:support@lhtalentagency.com"
+          href="mailto:letsconecttech@gmail.com"
           className="text-base bg-[#FFF5F4] my-2 w-[90%] max-w-sm border-[1px] border-[#DE0402] rounded-full whitespace-nowrap py-3 text-center"
         >
-          <span className="font-bold">Email:</span> support@lhtalentagency.com
+          <span className="font-bold">Email:</span> letsconecttech@gmail.com
         </a>
       </div>
       <Footer />

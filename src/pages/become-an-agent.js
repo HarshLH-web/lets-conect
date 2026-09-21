@@ -98,7 +98,7 @@ function BecomeAnAgent() {
     {
       question: "Whom can I contact for help or more information?",
       answer:
-        'For any queries, please contact our support team at <a href="mailto:support@lhtalentagency.com" style="color: #DE0402;">support@lhtalentagency.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>. You Can also Submit The Above <a href="#apply-now-form" style="color: #DE0402;"> Form. </a>',
+        'For any queries, please contact our support team at <a href="mailto:letsconecttech@gmail.com" style="color: #DE0402;">letsconecttech@gmail.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>. You Can also Submit The Above <a href="#apply-now-form" style="color: #DE0402;"> Form. </a>',
     },
   ];
 
@@ -218,12 +218,12 @@ function BecomeAnAgent() {
             text="Talent Managers are key partners for live-streaming apps like Bigo, Tango, Poppo, Mimi, Niki, etc. They identify and cultivate new talent, contributing to platform growth by guiding and managing their team of streamers."
           />
         </div>
-        <Link
+        {/* <Link
           href="/apply-now"
           className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-6 hover:bg-transparent hover:text-[#DE0402]"
         >
           Join Us
-        </Link>
+        </Link> */}
       </div>
 
       {/* Section 3 */}
@@ -283,10 +283,10 @@ function BecomeAnAgent() {
           Operated by: Let&apos;s Conect | IFZA Business Park, Building A1,
           Dubai Silicon Oasis, Dubai, UAE | Support:{" "}
           <a
-            href="mailto:support@lhtalentagency.com"
+            href="mailto:letsconecttech@gmail.com"
             className="underline text-[#DE0402]"
           >
-            support@lhtalentagency.com
+            letsconecttech@gmail.com
           </a>
         </p>
       </section>

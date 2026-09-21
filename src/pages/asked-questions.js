@@ -109,7 +109,7 @@ function Faq() {
     <>
       <Head>
         <title>
-          FAQs | Live Hosting Agency: Answers to Your Streaming Questions
+          FAQs | Let&apos;s Conect: Answers to Your Streaming Questions
         </title>
         <meta
           name="description"
@@ -132,7 +132,7 @@ function Faq() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="FAQs | Live Hosting Agency: Answers to Your Streaming Questions"
+          content="FAQs | Let&apos;s Conect: Answers to Your Streaming Questions"
         />
         <meta property="og:site_name" content="Let's Conect" />
         <meta
@@ -153,7 +153,7 @@ function Faq() {
         />
         <meta
           name="twitter:title"
-          content="FAQs | Live Hosting Agency: Answers to Your Streaming Questions"
+          content="FAQs | Let&apos;s Conect: Answers to Your Streaming Questions"
         />
         <meta
           name="twitter:description"

@@ -1171,17 +1171,17 @@ export default function BoloupAgencyRegistration() {
             </p>
             <div className="border-t border-[#DE0402] pt-4 mt-6">
               <p className="text-sm lg:text-base text-[#363636] text-center">
-                <strong className="text-[#1C1B1B]">Operated by:</strong> Let&apos;s
-                Conect
+                <strong className="text-[#1C1B1B]">Operated by:</strong>{" "}
+                Let&apos;s Conect
                 <br />
                 IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE
                 <br />
                 <strong className="text-[#1C1B1B]">Support:</strong>{" "}
                 <a
-                  href="mailto:support@lhtalentagency.com"
+                  href="mailto:letsconecttech@gmail.com"
                   className="underline text-[#DE0402] hover:text-[#1C1B1B] transition-colors"
                 >
-                  support@lhtalentagency.com
+                  letsconecttech@gmail.com
                 </a>{" "}
                 |
                 <a

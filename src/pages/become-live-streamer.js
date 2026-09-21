@@ -174,10 +174,10 @@ function BecomeLiveStreamer() {
             </p>
             <div className="gap-6 flex items-center justify-center lg:justify-start flex-wrap">
               <Link
-                href="/apply-now"
+                href="/customer-support"
                 className="bg-[#DE0400] border-2 border-[#DE0400] hover:bg-transparent hover:text-[#DE0400] text-base lg:text-lg text-white px-6 py-2 rounded-full cursor-pointer transition-all duration-300 inline-block whitespace-nowrap"
               >
-                Currently Hiring
+                Contact Us
               </Link>
               <Link
                 href="/live-streaming-tips"
@@ -383,17 +383,6 @@ function BecomeLiveStreamer() {
             </p>
             <p className="text-[#363636] text-base lg:text-[19px] font-semibold">
               Ready to start the journey?{" "}
-            </p>
-
-            <p className="text-[#363636] text-base lg:text-[19px] font-semibold">
-              Fill out the{" "}
-              <Link
-                href="/become-live-streamer"
-                className="text-[#DE0400] underline hover:text-[#363636]"
-              >
-                registration form
-              </Link>{" "}
-              above and join our live-streaming world!
             </p>
           </div>
         </div>
