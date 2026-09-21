@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /2024/
+Disallow: /feed/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /?amp=1
+
+
+# Sitemap location: https://lhtalentagency.com/sitemap.xml
