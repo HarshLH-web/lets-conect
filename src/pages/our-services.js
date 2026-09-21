@@ -48,7 +48,6 @@ const fields = [
   },
 ];
 
-
 function Services() {
   const [activeTab, setActiveTab] = useState(1);
   const [formValues, setFormValues] = useState({});
@@ -56,9 +55,42 @@ function Services() {
 
   // Content for each tab
   const tabs = [
-    { id: 1, label: "Hiring Talent", image: '/1.svg', alt: "Hiring Talented Streamers", content: ["Recruiting Cheerful Streamers", "Every Content is Welcomed", "A Stage for Your Talent", "Limitless Income Source"] },
-    { id: 2, label: "Recruit Agents", image: '/2.svg', alt: "Recruit live Streaming Agents", content: ["Onboard the Passionate Agents", "Managing a Team Effectively", "Support System for Streamers", "Earn Commission"] },
-    { id: 3, label: "Manage Talent", image: '/3.svg', alt: "Manage Talented Hosts & Agents", content: ["Personalized Guidance", "Provide 24*7 Support Service", "Enhance Your Personality", "Boost Your Income"] },
+    {
+      id: 1,
+      label: "Hiring Talent",
+      image: "/1.svg",
+      alt: "Hiring Talented Streamers",
+      content: [
+        "Recruiting Cheerful Streamers",
+        "Every Content is Welcomed",
+        "A Stage for Your Talent",
+        "Limitless Income Source",
+      ],
+    },
+    {
+      id: 2,
+      label: "Recruit Agents",
+      image: "/2.svg",
+      alt: "Recruit live Streaming Agents",
+      content: [
+        "Onboard the Passionate Agents",
+        "Managing a Team Effectively",
+        "Support System for Streamers",
+        "Earn Commission",
+      ],
+    },
+    {
+      id: 3,
+      label: "Manage Talent",
+      image: "/3.svg",
+      alt: "Manage Talented Hosts & Agents",
+      content: [
+        "Personalized Guidance",
+        "Provide 24*7 Support Service",
+        "Enhance Your Personality",
+        "Boost Your Income",
+      ],
+    },
   ];
 
   const handleSubmit = async (e) => {
@@ -66,26 +98,26 @@ function Services() {
     setIsSubmitting(true);
 
     // Get IP address
-    const ipAddress = await fetch('https://api.ipify.org?format=json')
-      .then(response => response.json())
-      .then(data => data.ip);
+    const ipAddress = await fetch("https://api.ipify.org?format=json")
+      .then((response) => response.json())
+      .then((data) => data.ip);
 
     // Prepare the form data
     const dataToSend = {
-      name: formValues.name || '',
-      email: formValues.email || '',
-      phone: formValues.phone || '',
-      website_link: formValues.website_link || '',
-      message: formValues.message || '',
+      name: formValues.name || "",
+      email: formValues.email || "",
+      phone: formValues.phone || "",
+      website_link: formValues.website_link || "",
+      message: formValues.message || "",
       ip_address: ipAddress,
       page_url: window.location.href,
     };
 
     try {
-      const response = await fetch('https://webpanel.store/api/formData', {
-        method: 'POST',
+      const response = await fetch("https://webpanel.store/api/formData", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(dataToSend),
       });
@@ -113,48 +145,84 @@ function Services() {
     }));
   };
 
-  if (typeof window !== 'undefined') {
-    import('gsap/ScrollTrigger')
+  if (typeof window !== "undefined") {
+    import("gsap/ScrollTrigger")
       .then((module) => {
         const ScrollTrigger = module.default;
         // Use ScrollTrigger here
       })
       .catch((error) => {
-        console.error('Error loading ScrollTrigger:', error);
+        console.error("Error loading ScrollTrigger:", error);
       });
   }
 
   return (
     <>
       <Head>
-        <title>Our Services | LH Talent Agency | Grow Your Streaming Presence</title>
-        <meta name="description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
-        <meta name="keywords" content="Hire Talented Streamers, Recruit live Streaming Agents, Streamer Recruitment Agency, Promote Live Streaming platforms, Live streaming Services" />
+        <title>
+          Our Services | Let&apos;s Conect | Grow Your Streaming Presence
+        </title>
+        <meta
+          name="description"
+          content="Explore the range of services offered by Let's Conect, including hiring hosts, recruiting agencies, and managing them. We help you to grow."
+        />
+        <meta
+          name="keywords"
+          content="Hire Talented Streamers, Recruit live Streaming Agents, Streamer Recruitment Agency, Promote Live Streaming platforms, Live streaming Services"
+        />
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://lhtalentagency.com/our-services" />
+        <meta
+          property="og:url"
+          content="https://www.letsconect.com/our-services"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Our Services | LH Talent Agency | Grow Your Streaming Presence" />
-        <meta property="og:site_name" content="LH Talent Agency" />
-        <meta property="og:description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
-        <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
+        <meta
+          property="og:title"
+          content="Our Services | Let's Conect | Grow Your Streaming Presence"
+        />
+        <meta property="og:site_name" content="Let's Conect" />
+        <meta
+          property="og:description"
+          content="Explore the range of services offered by Let's Conect, including hiring hosts, recruiting agencies, and managing them. We help you to grow."
+        />
+        <meta
+          property="og:image"
+          content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250"
+        />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="lhtalentagency.com" />
-        <meta property="twitter:url" content="https://lhtalentagency.com/our-services" />
-        <meta name="twitter:title" content="Our Services | LH Talent Agency | Grow Your Streaming Presence" />
-        <meta name="twitter:description" content="Explore the range of services offered by LH Talent Agency, including hiring hosts, recruiting agencies, and managing them. We help you to grow." />
-        <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250" />
-        
+        <meta
+          property="twitter:url"
+          content="https://www.letsconect.com/our-services"
+        />
+        <meta
+          name="twitter:title"
+          content="Our Services | Let's Conect | Grow Your Streaming Presence"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore the range of services offered by Let's Conect, including hiring hosts, recruiting agencies, and managing them. We help you to grow."
+        />
+        <meta
+          name="twitter:image"
+          content="https://opengraph.b-cdn.net/production/images/e04db76e-b344-45d3-a4fd-bfcc6a3bb231.jpg?token=wthbG12ZawSlhgRHgv7eK3o8ISBCVVFjtJJJjz_EZl4&height=650&width=1200&expires=33277340250"
+        />
+
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://lhtalentagency.com/our-services" />
+        <link rel="canonical" href="https://www.letsconect.com/our-services" />
       </Head>
       <Header />
       <div className="services-bg">
-        <h1 className="text-black text-4xl lg:text-6xl font-extrabold uppercase">Our Services</h1>
+        <h1 className="text-black text-4xl lg:text-6xl font-extrabold uppercase">
+          Our Services
+        </h1>
       </div>
       <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-lg">
-        <h2 className="text-center text-3xl lg:text-4xl font-bold uppercase mt-8 lg:mt-20">Creator <span className="text-[#DE0402]">Management Services</span></h2>
+        <h2 className="text-center text-3xl lg:text-4xl font-bold uppercase mt-8 lg:mt-20">
+          Creator <span className="text-[#DE0402]">Management Services</span>
+        </h2>
       </div>
 
       {/* Tab Section */}
@@ -165,16 +233,16 @@ function Services() {
             <button
               key={tab.id}
               className={`relative px-4 py-2 lg:py-3 rounded-2xl border-[1px] w-full flex items-center justify-center gap-4 lg:gap-0 cursor-pointer lg:flex-1 ${
-                activeTab === tab.id ? 'tab-gradient text-black border-[#DE0402]' : 'bg-white text-black border-[#bfbfbf]'
+                activeTab === tab.id
+                  ? "tab-gradient text-black border-[#DE0402]"
+                  : "bg-white text-black border-[#bfbfbf]"
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
               <h3 className="text-lg lg:text-2xl font-semibold">{tab.label}</h3>
               {/* Triangle */}
               {activeTab === tab.id && (
-                <span
-                  className="hidden lg:block absolute -bottom-[15px] left-1/2 transform -translate-x-1/2 rotate-180"
-                >
+                <span className="hidden lg:block absolute -bottom-[15px] left-1/2 transform -translate-x-1/2 rotate-180">
                   <svg
                     width="30"
                     height="20"
@@ -200,17 +268,35 @@ function Services() {
 
         {/* Content */}
         <div className="tab-content-shadow mt-4 lg:mt-8 p-4 rounded-2xl flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-0">
-          <Image src={tabs.find((tab) => tab.id === activeTab)?.image} alt={tabs.find((tab) => tab.id === activeTab)?.alt} width={288} height={288} className="w-28 lg:w-72 h-28 lg:h-72 flex-1" />
+          <Image
+            src={tabs.find((tab) => tab.id === activeTab)?.image}
+            alt={tabs.find((tab) => tab.id === activeTab)?.alt}
+            width={288}
+            height={288}
+            className="w-28 lg:w-72 h-28 lg:h-72 flex-1"
+          />
           <div className="flex flex-col flex-1">
-            {tabs.find((tab) => tab.id === activeTab)?.content.map((item, index) => (
-              <div key={index}>
-                <div className="flex items-center justify-start gap-2">
-                  <Image src="/red-arrow.svg" alt="arrow" width={20} height={20} className="w-4 h-4 lg:w-5 lg:h-5" />
-                  <p className="text-base lg:text-xl font-semibold leading-normal">{item}</p>
+            {tabs
+              .find((tab) => tab.id === activeTab)
+              ?.content.map((item, index) => (
+                <div key={index}>
+                  <div className="flex items-center justify-start gap-2">
+                    <Image
+                      src="/red-arrow.svg"
+                      alt="arrow"
+                      width={20}
+                      height={20}
+                      className="w-4 h-4 lg:w-5 lg:h-5"
+                    />
+                    <p className="text-base lg:text-xl font-semibold leading-normal">
+                      {item}
+                    </p>
+                  </div>
+                  {index <
+                    tabs.find((tab) => tab.id === activeTab)?.content.length -
+                      1 && <hr className="w-[90%] my-2 border-t-[#DFDFDF]" />}
                 </div>
-                {index < tabs.find((tab) => tab.id === activeTab)?.content.length - 1 && <hr className="w-[90%] my-2 border-t-[#DFDFDF]" />}
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
@@ -219,47 +305,78 @@ function Services() {
       <div className="pt-12 lg:pt-20 pb-12 lg:pb-20 appPromotion-bg">
         <div className="w-[90%] mx-auto max-w-screen-lg flex flex-col md:flex-row items-center justify-center md:justify-around pl-4 lg:pl-0 gap-8 lg:gap-0">
           <div className="flex items-center md:justify-center w-full lg:w-2/5">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-80 text-white text-left">Live <br /> <span className="text-[#DE0402]">Streaming</span> <br /> App Promotions</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-80 text-white text-left">
+              Live <br /> <span className="text-[#DE0402]">Streaming</span>{" "}
+              <br /> App Promotions
+            </h2>
           </div>
           <div className="flex flex-col gap-4 w-full lg:w-2/5 border-l-2 border-white py-4">
-            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">Brand Awareness</h4>
-            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">Promotional Campaigns</h4>
-            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">Increase Userbase</h4>
-            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">Gain More Agents</h4>
+            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">
+              Brand Awareness
+            </h4>
+            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">
+              Promotional Campaigns
+            </h4>
+            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">
+              Increase Userbase
+            </h4>
+            <h4 className="text-xl lg:text-2xl font-semibold py-2 px-4 lg:px-6 bg-white rounded-[0px_25px_25px_0px] w-fit">
+              Gain More Agents
+            </h4>
           </div>
         </div>
       </div>
 
       {/* Section 3 */}
       <div className="py-12 lg:py-20">
-        <h2 className="text-center text-3xl lg:text-4xl font-semibold uppercase mb-6 lg:mb-8">Why <span className="text-[#DE0402]">Choose Us</span></h2>
+        <h2 className="text-center text-3xl lg:text-4xl font-semibold uppercase mb-6 lg:mb-8">
+          Why <span className="text-[#DE0402]">Choose Us</span>
+        </h2>
         <div className="flex flex-wrap gap-2 lg:gap-4 items-center justify-center w-[90%] mx-auto lg:w-[80%] max-w-5xl">
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">5+ Years <br /> of Expertise</p> 
+            <p className="text-sm lg:text-xl text-center px-2">
+              5+ Years <br /> of Expertise
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Top Recruiting <br /> Agency</p> 
+            <p className="text-sm lg:text-xl text-center px-2">
+              Top Recruiting <br /> Agency
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Guidance on <br /> Every-step</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Guidance on <br /> Every-step
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Increase your <br /> Audience</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Increase your <br /> Audience
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Boost your <br /> Revenue</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Boost your <br /> Revenue
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Personalized <br /> Support</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Personalized <br /> Support
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Get Applications <br /> Updates</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Get Applications <br /> Updates
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">Networking <br /> Growth</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              Networking <br /> Growth
+            </p>
           </div>
           <div className="flex items-center justify-center border-[1px] border-[#DFDFDF] rounded-xl h-16 lg:h-24 w-[45%] lg:w-[30%]">
-            <p className="text-sm lg:text-xl text-center px-2">24*7 <br /> Support</p>
+            <p className="text-sm lg:text-xl text-center px-2">
+              24*7 <br /> Support
+            </p>
           </div>
         </div>
       </div>
@@ -267,19 +384,26 @@ function Services() {
       {/* Section 4 */}
       <div className="py-12 lg:py-20 collaboration-section">
         <div className="w-[90%] mx-auto lg:w-[80%] max-w-screen-lg text-center">
-          <ScrollingText className="text-3xl lg:text-3xl lg:leading-[1.35] font-semibold" text="Explore exciting opportunities in the live-streaming world! We provide personal support and guidance to help you succeed. Join us and let's make your dreams a reality!" />
+          <ScrollingText
+            className="text-3xl lg:text-3xl lg:leading-[1.35] font-semibold"
+            text="Explore exciting opportunities in the live-streaming world! We provide personal support and guidance to help you succeed. Join us and let's make your dreams a reality!"
+          />
         </div>
-        <Link href="/apply-now" className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-8 hover:bg-transparent hover:text-[#DE0402]">Apply Now</Link>
+        <Link
+          href="/apply-now"
+          className="bg-[#DE0402] w-fit text-white py-2 px-6 rounded-full font-semibold flex items-center gap-2 transition duration-300 border-2 border-[#DE0402] mx-auto mt-4 lg:mt-8 hover:bg-transparent hover:text-[#DE0402]"
+        >
+          Apply Now
+        </Link>
       </div>
 
       {/* Section 5 */}
       <div className="w-[90%] mx-auto max-w-screen-lg lg:w-[80%] px-4 py-12 lg:px-16 lg:py-12 lg:mt-12 mb-20 lg:mb-40 flex flex-col-reverse lg:flex-row items-center gap-6 lg:gap-16">
         {/* Form Container */}
         {/* <div className="border border-[#DFDFDF] rounded-3xl p-6 w-full lg:w-1/2 tab-gradient"> */}
-          <BlogForm fields={fields} className="py-8 px-4 lg:px-6" />
+        <BlogForm fields={fields} className="py-8 px-4 lg:px-6" />
 
-
-          {/* <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        {/* <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="relative">
               <input 
                 id="name"
@@ -378,7 +502,13 @@ function Services() {
           <p className="text-xl lg:text-2xl text-[#DE0402] font-medium mt-4 lg:mt-4">
             Partner with the Best <br /> Agency Today!
           </p>
-          <Image src="/red-arrow-curved.svg" alt="curved-arrow" width={96} height={96} className="hidden lg:block w-16 lg:w-24 mt-4" />
+          <Image
+            src="/red-arrow-curved.svg"
+            alt="curved-arrow"
+            width={96}
+            height={96}
+            className="hidden lg:block w-16 lg:w-24 mt-4"
+          />
         </div>
       </div>
       <Footer />

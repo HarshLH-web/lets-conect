@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="application-name" content="LH Talent Agency" />
+        <meta name="application-name" content="Let's Conect" />
 
         {/* Google Search Console */}
         <meta
@@ -50,12 +50,12 @@ export default function Document() {
 
         {/* WhatsApp Chatbot */}
         <Script
-            type="text/javascript"
-            src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
-            id="aisensy-wa-widget"
-            widget-id="aabf1v"
-            strategy="beforeInteractive" // CHANGE THIS
-      />
+          type="text/javascript"
+          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+          id="aisensy-wa-widget"
+          widget-id="aabf1v"
+          strategy="beforeInteractive" // CHANGE THIS
+        />
       </Head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}
@@ -85,7 +85,7 @@ export default function Document() {
                 />
                 <div className="flex flex-col gap-1">
                   <p className="text-base font-medium leading-none">
-                    LH Talent Agency
+                    Let&apos;s Conect
                   </p>
                   <p className="text-xs">online</p>
                 </div>
@@ -122,7 +122,7 @@ export default function Document() {
                 <div className="absolute -top-0 left-[-10px] w-0 h-0 border-t-[12px] border-t-white border-r-[12px] border-r-transparent rotate-90"></div>
 
                 <p className="text-sm font-medium text-[#848484] mb-1">
-                  LH Talent Agency
+                  Let&apos;s Conect
                 </p>
 
                 <p className="text-sm">Hi,</p>

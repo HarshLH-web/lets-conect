@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const FaqAccordion = ({ faqs = [] }) => {
   const [activeIndex, setActiveIndex] = useState(null); // Tracks the active FAQ index
@@ -10,7 +10,7 @@ const FaqAccordion = ({ faqs = [] }) => {
   // const faqs = [
   //   {
   //     question: 'Who are streamers?',
-  //     answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With LH Talent Agency, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #DE0402;">Start your journey today!</a>',
+  //     answer: 'Streamers are the individuals who perform live streaming in front of a live audience. They can share any information or their skills through broadcast. The skills can be related to music, dance, games or simply chatting with their fans. With Let&apos;s Conect, these streamers can easily earn money by following their passion for streaming. We connect them with popular live-streaming platforms and provide the guidance they need to succeed in the industry. <br /> <a href="/become-live-streamer" style="color: #DE0402;">Start your journey today!</a>',
   //   },
   //   {
   //     question: 'How can I earn money through live streaming?',
@@ -18,7 +18,7 @@ const FaqAccordion = ({ faqs = [] }) => {
   //   },
   //   {
   //     question: 'How can I become an official streamer?',
-  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like LH Talent Agency can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">here</a>.',
+  //     answer: 'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like Let&apos;s Conect can guide you through the process, provide training, and help you start earning. Check out the host registration process <a href="/blogs/become-poppo-live-host-and-earn-money" style="color: #DE0402;">here</a>.',
   //   },
   //   {
   //     question: 'Do we need a huge follower list to start streaming?',
@@ -30,11 +30,11 @@ const FaqAccordion = ({ faqs = [] }) => {
   //   },
   //   {
   //     question: 'How much can I earn as a host?',
-  //     answer: 'As a host, your earnings can vary depending on your effort, engagement, and the platform’s incentives. Your income will be different daily. The interaction with your viewers will result in your earnings of the day. Some hosts earn a part-time income, while others make a full-time living through streaming. <br /> LH Talent Agency can help you maximize your potential by providing you with the needed support and guidance.',
+  //     answer: 'As a host, your earnings can vary depending on your effort, engagement, and the platform’s incentives. Your income will be different daily. The interaction with your viewers will result in your earnings of the day. Some hosts earn a part-time income, while others make a full-time living through streaming. <br /> Let&apos;s Conect can help you maximize your potential by providing you with the needed support and guidance.',
   //   },
   //   {
   //     question: 'How can I become an official agency?',
-  //     answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> LH Talent Agency works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/blogs/how-to-create-poppo-live-account" style="color: #DE0402;">here</a>.',
+  //     answer: 'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> Let&apos;s Conect works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process <a href="/blogs/how-to-create-poppo-live-account" style="color: #DE0402;">here</a>.',
   //   },
   //   {
   //     question: 'How much can I earn as an agency?',
@@ -46,7 +46,7 @@ const FaqAccordion = ({ faqs = [] }) => {
   //   },
   //   {
   //     question: 'Is there a specific time requirement for streaming?',
-  //     answer: 'There’s no fixed time for streaming, but consistency helps you grow. A regular schedule makes it easier for your audience to connect with you and know when to tune in. Some platforms require a minimum number of streaming hours to earn rewards. The best part of streaming is the flexibility to work according to your schedule. LH Talent Agency can support you in setting up your schedule based on your audience reach.',
+  //     answer: 'There’s no fixed time for streaming, but consistency helps you grow. A regular schedule makes it easier for your audience to connect with you and know when to tune in. Some platforms require a minimum number of streaming hours to earn rewards. The best part of streaming is the flexibility to work according to your schedule. Let&apos;s Conect can support you in setting up your schedule based on your audience reach.',
   //   },
   // ];
 
@@ -60,32 +60,42 @@ const FaqAccordion = ({ faqs = [] }) => {
           >
             {/* Question Button */}
             <button
-              className={`w-full text-left px-4 py-3 hover:bg-gray-200 flex justify-between items-center transition-all duration-300 ${activeIndex === index ? 'bg-gray-200' : ''}`}
+              className={`w-full text-left px-4 py-3 hover:bg-gray-200 flex justify-between items-center transition-all duration-300 ${activeIndex === index ? "bg-gray-200" : ""}`}
               onClick={() => toggleAccordion(index)}
             >
-              <span className="text-base md:text-lg font-semibold">{faq.question}</span>
+              <span className="text-base md:text-lg font-semibold">
+                {faq.question}
+              </span>
               {/* Arrow Icon */}
               <svg
                 className={`w-5 h-5 transform transition-transform duration-300 min-w-5 ${
-                  activeIndex === index ? 'rotate-180' : 'rotate-0'
+                  activeIndex === index ? "rotate-180" : "rotate-0"
                 }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
-            
+
             {/* Answer Section */}
             <div
               className={`px-4 overflow-hidden transition-all duration-300 ${
-                activeIndex === index ? 'max-h-[500px] py-4' : 'max-h-0'
+                activeIndex === index ? "max-h-[500px] py-4" : "max-h-0"
               }`}
-              style={{ transitionTimingFunction: 'ease-in-out' }}
+              style={{ transitionTimingFunction: "ease-in-out" }}
             >
-              <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
+              <p
+                className="text-gray-600"
+                dangerouslySetInnerHTML={{ __html: faq.answer }}
+              ></p>
             </div>
           </div>
         ))}

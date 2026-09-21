@@ -7,4 +7,4 @@ Disallow: /category/
 Disallow: /?amp=1
 
 
-# Sitemap location: https://lhtalentagency.com/sitemap.xml
+# Sitemap location: https://www.letsconect.com/sitemap.xml
