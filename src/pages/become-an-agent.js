@@ -98,7 +98,7 @@ function BecomeAnAgent() {
     {
       question: "Whom can I contact for help or more information?",
       answer:
-        'For any queries, please contact our support team at <a href="mailto:letsconecttech@gmail.com" style="color: #DE0402;">letsconecttech@gmail.com</a> or WhatsApp us at <a href="https://wa.me/917065384660" style="color: #DE0402;">+917065384660</a>. You Can also Submit The Above <a href="#apply-now-form" style="color: #DE0402;"> Form. </a>',
+        'For any queries, please contact our support team at <a href="mailto:letsconecttech@gmail.com" style="color: #DE0402;">letsconecttech@gmail.com</a> or Contact us at +971568803758.',
     },
   ];
 
@@ -200,12 +200,12 @@ function BecomeAnAgent() {
         </div>
       </div>
       {/* CHANGE: Added Disclaimer Banner for Compliance */}
-      <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base">
+      {/* <div className="bg-red-600 text-white text-center py-3 px-4 font-semibold text-sm lg:text-base">
         <p>
           DISCLAIMER: This is an independent talent agency website and is NOT
           the official platform for Bigo, Tango, Poppo, or others.
         </p>
-      </div>
+      </div> */}
 
       {/* Section 2 */}
       <div className="py-12 lg:py-20 collaboration-section">
@@ -268,7 +268,7 @@ function BecomeAnAgent() {
       </div>
 
       {/* CHANGE: Added Transparency & Platform Independence Section */}
-      <section className="w-[90%] max-w-5xl mx-auto mb-12 rounded-2xl border border-gray-200 px-4 py-6 shadow-sm bg-white">
+      {/* <section className="w-[90%] max-w-5xl mx-auto mb-12 rounded-2xl border border-gray-200 px-4 py-6 shadow-sm bg-white">
         <h3 className="text-lg lg:text-xl font-semibold text-black mb-2 text-center">
           Transparency & Platform Independence
         </h3>
@@ -289,7 +289,7 @@ function BecomeAnAgent() {
             letsconecttech@gmail.com
           </a>
         </p>
-      </section>
+      </section> */}
 
       <Footer />
     </>

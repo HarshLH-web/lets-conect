@@ -453,7 +453,7 @@ export default function Home() {
           </p>
 
           <Link
-            href="mailto:letsconecttech@gmail.com"
+            href="/customer-support"
             className="bg-transparent hover:bg-[#DE0402] hover:text-white text-[#DE0402] border-[#DE0402] border-2 rounded-full font-semibold flex items-center gap-1 w-fit relative overflow-hidden group transition duration-300 mx-auto py-3 px-6 lg:mt-0"
             aria-label="Get in Touch"
           >
