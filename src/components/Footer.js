@@ -40,9 +40,9 @@ function Footer() {
             <div className="w-16 h-0.5 bg-white mx-auto mb-4"></div>
 
             <p
-              className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity border-2 border-white rounded-full py-2 px-4 w-fit mx-auto"
+              className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity rounded-full w-fit mx-auto"
             >
-              <span className="px-1 rounded-full">
+              {/* <span className="px-1 rounded-full">
                 <Image
                   src="/wa-icon.svg"
                   alt="Whatsapp"
@@ -50,7 +50,7 @@ function Footer() {
                   width={32}
                   height={32}
                 />
-              </span>
+              </span> */}
               <span className="text-white text-lg font-semibold">
                 +971 56 880 3758
               </span>

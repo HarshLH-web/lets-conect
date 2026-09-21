@@ -104,9 +104,9 @@ function Header() {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/logo-full.svg"
               alt="Let's Conect - logo"
-              className="w-12 h-auto py-1"
+              className="w-32 lg:w-40 h-auto py-1"
               width={80}
               height={80}
             />
