@@ -39,9 +39,7 @@ function Footer() {
             </p>
             <div className="w-16 h-0.5 bg-white mx-auto mb-4"></div>
 
-            <p
-              className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity rounded-full w-fit mx-auto"
-            >
+            <p className="flex items-center justify-center space-x-3 mb-2 hover:opacity-90 transition-opacity rounded-full w-fit mx-auto">
               {/* <span className="px-1 rounded-full">
                 <Image
                   src="/wa-icon.svg"
@@ -75,7 +73,8 @@ function Footer() {
               </span>
             </a>
             <p className="text-white px-4 lg:px-2 2xl:px-0 font-semibold">
-              Address: IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE
+              Address: IFZA Business Park, Building A1, Dubai Silicon Oasis,
+              Dubai, UAE
             </p>
             {/* <div className=" mb-6 flex items-center justify-center text-white relative">
             <input 

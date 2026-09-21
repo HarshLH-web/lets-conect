@@ -60,12 +60,12 @@ function Faq() {
     {
       question: "How can I earn money through live streaming?",
       answer:
-        'You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like Poppo Live, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.',
+        "You can earn money by becoming an official streamer on a live-streaming platform. We are working with some popular streaming applications like Poppo Live, Niki Live, Chamet, etc. which provide amazing opportunities for live streamers to earn while sitting at home. The streamer shows their skills to the live audience and they send virtual gifts as an appreciation to their favorite streamer. These gifts can be easily converted into real money through easy withdrawal access. Apart from virtual gifts, the streamer can also earn additional rewards through daily tasks, occasional events, participating in Passion PK, etc.",
     },
     {
       question: "How can I become an official streamer?",
       answer:
-        'To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like Let&apos;s Conect can guide you through the process, provide training, and help you start earning. Check out the host registration process here.',
+        "To become an official streamer, you need to sign up with a talent agency or directly with a streaming platform. Agencies like Let&apos;s Conect can guide you through the process, provide training, and help you start earning. Check out the host registration process here.",
     },
     {
       question: "Do we need a huge follower list to start streaming?",
@@ -85,12 +85,12 @@ function Faq() {
     {
       question: "How can I become an official agency?",
       answer:
-        'To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> Let&apos;s Conect works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process here.',
+        "To become an official agency, you need to partner with a live-streaming platform and recruit talented streamers. <br /> Let&apos;s Conect works with top live streaming applications globally and can help you with guidance and support related to how to set up and grow as an agency. Check out the agency registration process here.",
     },
     {
       question: "How much can I earn as an agency?",
       answer:
-        'As an agency, your earnings depend on the number of streamers you recruit and their performance. The agency also invites sub-agents to expand the network of the applications. Your commission will be calculated on the overall income of your agency, which includes the hired streamers and sub-agents. The more active and successful your hosts and sub-agents are, the higher your commissions. Want to know more about Poppo Agent Commission?',
+        "As an agency, your earnings depend on the number of streamers you recruit and their performance. The agency also invites sub-agents to expand the network of the applications. Your commission will be calculated on the overall income of your agency, which includes the hired streamers and sub-agents. The more active and successful your hosts and sub-agents are, the higher your commissions. Want to know more about Poppo Agent Commission?",
     },
     {
       question:

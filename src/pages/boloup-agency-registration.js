@@ -75,7 +75,7 @@ export default function BoloupAgencyRegistration() {
         throw new Error("Failed to submit form");
       }
 
-      setSubmitMessage("Submitted successfully. We'll reach out soon.");
+      setSubmitMessage("Submitted successfully. We&apos;ll reach out soon.");
       setFormData({
         name: "",
         email: "",
@@ -1171,10 +1171,10 @@ export default function BoloupAgencyRegistration() {
             </p>
             <div className="border-t border-[#DE0402] pt-4 mt-6">
               <p className="text-sm lg:text-base text-[#363636] text-center">
-                <strong className="text-[#1C1B1B]">Operated by:</strong> Let's
+                <strong className="text-[#1C1B1B]">Operated by:</strong> Let&apos;s
                 Conect
                 <br />
-                B-24 Shri Chand Park Matiala, Uttam Nagar, Delhi 110059 India
+                IFZA Business Park, Building A1, Dubai Silicon Oasis, Dubai, UAE
                 <br />
                 <strong className="text-[#1C1B1B]">Support:</strong>{" "}
                 <a
