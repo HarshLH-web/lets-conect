@@ -137,7 +137,7 @@ function JoinHoneycamAgency() {
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Go to the <strong>profile</strong>.</li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Click on <strong>&lsquo;settings&rsquo;</strong>.</li>
                         <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Join the <strong>studio</strong>.</li>
-                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Input the LH Agency&apos;s ID: <span className="font-bold bg-yellow-200 px-2 py-1 rounded">&quot;6052&quot;</span></li>
+                        <li className="text-[1rem] leading-[1.25] md:text-lg text-left">Input the ID: <span className="font-bold bg-yellow-200 px-2 py-1 rounded">&quot;6052&quot;</span></li>
                     </ul>
                 </div>
                 <div className="lg:w-1/2 lg:pl-8 mt-8 lg:mt-0 flex items-center justify-center">

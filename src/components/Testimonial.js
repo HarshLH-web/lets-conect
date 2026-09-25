@@ -5,17 +5,17 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Samridhi",
-      text: "Joining Let&apos;s Conect was the turning point in my streaming journey. Their supportive team will resolve all your concerns.",
+      text: "Joining Let's Conect was the turning point in my streaming journey. Their supportive team will resolve all your concerns.",
       image: "/samridhi.png", // Add image URL here if available
     },
     {
       name: "Eva",
-      text: "I started live streaming as a hobby, and one of my Poppo friends told me about LH. I immediately requested to join them. Today, I manage my 9-5 job as a professional and a streaming career to earn a passive income. Thanks to Let&apos;s Conect for all the provided resources.",
+      text: "I started live streaming as a hobby, and one of my Poppo friends told me about Let's Conect. I immediately requested to join them. Today, I manage my 9-5 job as a professional and a streaming career to earn a passive income. Thanks to Let's Conect for all the provided resources.",
       image: "/eva.png", // Add image URL here if available
     },
     {
       name: "Saleja",
-      text: "I was confused about whether to join an agency or not. I started live-streaming independently and soon realized I would need some extra support. I started researching a lot and finally joined Let&apos;s Conect. Since then I have been grateful for the agency’s guidance and support. I have grown a lot personally and professionally.",
+      text: "I was confused about whether to join an agency or not. I started live-streaming independently and soon realized I would need some extra support. I started researching a lot and finally joined Let's Conect. Since then I have been grateful for the agency’s guidance and support. I have grown a lot personally and professionally.",
       image: "/saleja.png", // Add image URL here if available
     },
   ];
